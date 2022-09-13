@@ -3,9 +3,9 @@
 /**
  *main - entry point
  *
- * description: This program prints the alphabets in lower case
+ * Description: This program prints the alphabets in lower case
  *
- * return: 0
+ * Return: 0
  **/
 
 int main(void)
