@@ -3,7 +3,7 @@
 /**
  *main - entry point
  *
- * description - This program prints the alphabets in lower case
+ * description: This program prints the alphabets in lower case
  *
  * return: 0
  **/
