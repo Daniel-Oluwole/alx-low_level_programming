@@ -3,27 +3,50 @@
 
 
 /**
- ** _strcat - function that concatenates 2 strings
- ** @dest: parameter
- ** @src: second parameter
+ ** _strcat - concatenates two strings,
  *
- *     * Return: pointer to dest
+ *   * @dest: destination.
+ *
+ *    * @src: source.
+ *
+ *     * Return: the pointer to dest.
  *
  **/
-
-
 
 char *_strcat(char *dest, char *src)
 
 {
 
-	int initial = 0;
+	int count = 0, count2 = 0;
 
-	int final = 0;
 
-	while (dest[initial++])
-		final++;
-	for (initial = 0; src[initial]; initial++)
-		dest[final++] = src[initial];
+
+	while (*(dest + count) != '\0')
+
+	{
+
+		count++;
+
+	}
+
+
+
+	while (count2 >= 0)
+
+	{
+
+		*(dest + count) = *(src + count2);
+
+		if (*(src + count2) == '\0')
+
+			break;
+
+		count++;
+
+		count2++;
+
+	}
+
 	return (dest);
+
 }
