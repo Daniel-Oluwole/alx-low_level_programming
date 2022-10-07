@@ -1,60 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
-
-
 
 /**
-** main - multiply 2 numbers as arguments
- *
- * * @argc: number of arguments
- *
- * * @argv: arguments
- *
- * * Return: 0 success
- *
+ ** main - A program that multiplies two numbers
+ ** @argc: argument counter
+ ** @argv: argument vector
+ ** Return: 0 always succes
  **/
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 
 {
 
-
-
-	unsigned long mul;
-
-	int i, j;
+	int num1, num2, mul;
 
 	if (argc != 3)
 
-	{ printf("Error\n");
-
-		exit(98); }
-
-	for (i = 1; i < argc; i++)
-
 	{
-
-		for (j = 0; argv[i][j] != '\0'; j++)
-
-		{
-
-			if (argv[i][j] > 57 || argv[i][j] < 48)
-
-			{  printf("Error\n");
-
-				exit(98); }
-
-		}
-
-
-
+		printf("Error\n");
+		exit(98);
 	}
 
-	mul = atol(argv[1]) *  atol(argv[2]);
+	else
 
-	printf("%lu\n", mul);
+	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		mul = num1 * num2;
+		printf("%d\n", mul);
 
-	return (0);
+		return (0);
+	}
 
 }
