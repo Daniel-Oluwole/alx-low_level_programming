@@ -2,10 +2,10 @@
 #include "dog.h"
 
 /**
- *  * print_dog - a function that prints a struct dog.
- *   * @d: struct to initialize
- *    * Return: 0
- *     */
+ ** print_dog - a function that prints a struct dog.
+ ** @d: struct to initialize
+ ** Return: 0
+ **/
 
 void print_dog(struct dog *d)
 {
