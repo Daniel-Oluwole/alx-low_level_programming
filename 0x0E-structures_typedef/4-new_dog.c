@@ -5,17 +5,17 @@ int _strLen(char *str);
 void fillMem(char *str, int strLen, char *dest);
 
 /**
- * * new_dog - Creates a new dog
- * *
- * * @name: Name of dog
- * *
- * * @age: Age of dog
- * *
- * * @owner: Owner of dog
- * *
- * * Return: Pointer to the newly created dog (SUCCESS) or
- * * NULL if insufficient memory was available (FAILURE)
- * */
+ ** new_dog - Creates a new dog
+ **
+ ** @name: Name of dog
+ **
+ ** @age: Age of dog
+ **
+ ** @owner: Owner of dog
+ **
+ ** Return: Pointer to the newly created dog (SUCCESS) or
+ ** NULL if insufficient memory was available (FAILURE)
+ **/
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -56,12 +56,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 }
 
 /**
- * * _strLen - Get length of a string
- * *
- * * @str: A string
- * *
- * * Return: Length of string
- * */
+ ** _strLen - Get length of a string
+ **
+ ** @str: A string
+ **
+ ** Return: Length of string
+ **/
 
 int _strLen(char *str)
 {
@@ -74,14 +74,14 @@ int _strLen(char *str)
 }
 
 /**
- * * fillMem - Copy string literal to allocated memory
- * *
- * * @str: String literal
- * *
- * * @strLen: @str length
- * *
- * * @dest: The allocated memory
- * */
+ ** fillMem - Copy string literal to allocated memory
+ **
+ ** @str: String literal
+ **
+ ** @strLen: @str length
+ **
+ ** @dest: The allocated memory
+ **/
 
 void fillMem(char *str, int strLen, char *dest)
 {
