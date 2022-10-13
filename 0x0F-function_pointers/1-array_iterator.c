@@ -8,8 +8,8 @@
  * * @array: An array of paramters (values) to be passed to @action
  * *
  * * @size: Size/length of @array
- * *
- * * @action: Pointer to a function
+ **
+ ** @action: Pointer to a function
  **/
 
 void array_iterator(int *array, size_t size, void (*action)(int))
